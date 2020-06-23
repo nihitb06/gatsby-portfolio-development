@@ -1,0 +1,32 @@
+{
+    "About": {
+        "info": "I'm a 22 year old design minded developer based in New Delhi. I enjoy developing Android Apps & fancy myself a Machine Learning Enthusiast"
+    },
+    "Work": [
+        {
+            "Position": "Business Analytics Intern",
+            "Company": "Tata Power - DDL",
+            "When": "June, 2019 to  July, 2019",
+            "Where": "New Delhi - IND"
+        },
+        {
+            "Position": "Android Developer Intern",
+            "Company": "InitQube",
+            "When": "September, 2018 to October, 2018",
+            "Where": "New Delhi - IND"
+        },
+        {
+            "Position": "Web Developer Intern",
+            "Company": "Defence Research and Development Organisation",
+            "When": "June, 2018 to July, 2018",
+            "Where": "New Delhi - IND"
+        }
+    ],
+    "Education": [
+        {
+            "Degree": "Bachelor's in Technology",
+            "Institute": "Guru Gobind Singh Indraprastha University",
+            "When": "August, 2016 to July, 2020"
+        }
+    ]
+}
