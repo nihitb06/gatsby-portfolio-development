@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "portfolio-website",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Personal website built in Gatsby",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -11,7 +11,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
     "@emotion/core": "^10.0.28",
