@@ -73,7 +73,7 @@ export default function Menu() {
     }
 
     return (
-      <BurgerMenu styles={styles}>
+      <BurgerMenu disableAutoFocus styles={styles}>
           <ul css={css`list-style: none`}>
               <ListLink id="home" className="menu-item" to="/" icon={faHome}>Portfolio</ListLink>
               <ListLink id="about" className="menu-item" to="/about" icon={faInfoCircle}>About</ListLink>

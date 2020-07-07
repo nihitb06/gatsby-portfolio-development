@@ -13,7 +13,7 @@ export default function Layout({ children }) {
         `}>
             <SEO />
             <Header outerContainerId="root" pageWarpId="page" />
-            <div id="page" css={css`flex-grow: 1`}>
+            <div id="page" css={css`flex-grow: 1; display: block`}>
                 {children}
             </div>
             <Footer />

@@ -4,8 +4,7 @@ export const colors = {
     colorAccent: "#FFDCB4",
     colorPrimaryLight: "#C060A1",
 
-    textColorPrimary: "#000",
+    textColorPrimary: "#071013",
     textColorSecondary: "#00000000",
-    textColorPrimaryInverse: "#FFFFFF",
-    textColorGrey: "rgba(0, 0, 0, 0.65)"
+    textColorPrimaryInverse: "#A994A7",
 }

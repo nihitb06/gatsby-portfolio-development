@@ -8,7 +8,7 @@
             "description": "Turning university exams into a breeze for my juniors.",
             "playLink": "https://play.google.com/store/apps/details?id=com.dev.nihitb06.usicttools",
             "gitLink": "",
-            "color": "#E36D4F"
+            "color": "#F1EFF2"
         },
         {
             "key": "0",
@@ -16,7 +16,7 @@
             "description": "Shake twice to add a note. Simple as that.",
             "playLink": "https://play.google.com/store/apps/details?id=com.dev.nihitb06.newlightningnote",
             "gitLink": "https://github.com/nihitb06/LightningNote",
-            "color": "#13B3B3"
+            "color": "#DDD7DC"
         },
         {
             "key": "2",
@@ -24,7 +24,7 @@
             "description": "Proof of concept for MVVM Architecture using Android Architecture Components.",
             "playLink": "https://play.google.com/store/apps/details?id=com.dev.nihitb06.theupdate",
             "gitLink": "https://github.com/nihitb06/TheUpdate",
-            "color": "#10B088"
+            "color": "#BEBCCB"
         }
     ]
 }

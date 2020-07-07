@@ -12,7 +12,7 @@ import { bp } from '../utils/breakpoints.js'
 export default function Home({ data }) {
     return (
         <Layout>
-            <div css={css`padding: 1.2rem`}>
+            <div css={css`padding: 1.2rem; position: relative; display: block`}>
                 <h2  css={css`
                     text-align: center;
                     margin-top: 3.5rem;
@@ -22,6 +22,10 @@ export default function Home({ data }) {
                     max-width: 960px;
                     min-height: 0;
                     margin: 5rem auto 0 auto;
+
+                    -webkit-column-break-inside: avoid;
+                    page-break-inside: avoid;
+                    break-inside: avoid;
 
                     columns: 2 250px;
                     column-gap: 2rem;
@@ -39,7 +43,7 @@ export default function Home({ data }) {
                     `}>
                         <p css={css`margin-bottom: 0.6rem`}>{indexData.bio}</p>
                         <Link className="hoverable" to="/about"
-                            css={css`color: ${colors.textColorGrey}`}>More about me</Link>
+                            css={css`color: ${colors.textColorPrimaryDark}`}>More about me</Link>
                     </div>
 
                     {indexData.projects.map((project, index) => {
@@ -47,11 +51,15 @@ export default function Home({ data }) {
                             <div css={css`
                                 background-color: ${project.color};
                                 padding: 2rem 2rem 0 2rem;
-                                color: ${colors.textColorPrimaryInverse};
                                 width: 100%;
-                                display: inline-block;
+                                display: block;
+                                -webkit-column-break-inside: avoid;
+                                page-break-inside: avoid;
+                                break-inside: avoid;
                             `}>
-                                <h4 css={css`color: ${colors.textColorPrimaryInverse}; margin-bottom: 0.6rem`}>{project.title}</h4>
+                                <h4 css={css`margin-bottom: 0.6rem`}>
+                                    {project.title}
+                                </h4>
                                 <hr css={css`
                                     background-color: ${colors.textColorPrimaryInverse};
                                     height: 3px;
@@ -64,8 +72,6 @@ export default function Home({ data }) {
                                     display: ${ project.gitLink === "" ? "none" : "block" }
                                 `}>
                                     <a href={project.gitLink} target="_blank" rel="noreferrer" css={css`
-                                        color: ${colors.textColorPrimaryInverse};
-
                                         &:hover {
                                             text-decoration: underline;
                                         }
@@ -79,7 +85,7 @@ export default function Home({ data }) {
                                     display: flex;
                                     flex-direction: row;
                                     justify-content: flex-start;
-                                    margin-bottom: 4rem;
+                                    margin-bottom: 3rem;
                                 `}>
                                     <a css={css`
                                         display: ${ project.playLink === "" ? "none" : "inline-block" }
